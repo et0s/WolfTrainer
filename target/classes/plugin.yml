@@ -1,0 +1,8 @@
+name: WolfTrainer
+version: 1.0-SNAPSHOT
+main: com.et0s.WolfTrainer.App
+author: et0s
+commands:
+   wt:
+      description: WolfTrainer Main Command
+      aliases: [wolftrainer, wolftrain]

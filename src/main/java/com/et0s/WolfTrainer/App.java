@@ -125,7 +125,7 @@ public class App extends JavaPlugin implements Listener
                                 //execute "give"
                                 Player destPlayer = getServer().getPlayer(args[1]);
                                 if(destPlayer == null){
-                                    player.sendMessage("[WolfTrainer]" + ChatColor.RED + " Player " + args[1] + " can't be found! " + ChatColor.GRAY + "Perhaps a Typo, Try again?");
+                                    player.sendMessage("[WolfTrainer]" + ChatColor.RED + " Player " + args[1] + " can't be found! " + ChatColor.GRAY + "Perhaps they are Offline, or a Typo?");
                                 }else if(destPlayer.equals(player)){
                                     player.sendMessage("[WolfTrainer]" +  ChatColor.BOLD + " YOU " + ChatColor.RESET + ChatColor.GRAY + "own this Wolf, silly!");
                                 }else{
@@ -190,7 +190,7 @@ public class App extends JavaPlugin implements Listener
                     }
                 }
             }
-            player.sendMessage("[WolfTrainer] " + ChatColor.GREEN + "Need Help?" + ChatColor.GRAY + " Left-click a" + ChatColor.WHITE + ChatColor.ITALIC + " Tamed Wolf " + ChatColor.RESET + ChatColor.GRAY + "with a " + ChatColor.GOLD + "STICK");
+            player.sendMessage("[WolfTrainer] " + ChatColor.GREEN + "Need Help?" + ChatColor.GRAY + " Left-click a" + ChatColor.WHITE + ChatColor.ITALIC + " Tamed Wolf " + ChatColor.RESET + ChatColor.GRAY + "with a " + ChatColor.GOLD + this.getConfig().getString("Wolf-Stick"));
             return false;
             
         }else{
