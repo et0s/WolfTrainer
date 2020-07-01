@@ -5,3 +5,4 @@ author: et0s
 commands:
    wt:
       description: WolfTrainer Main Command
+      aliases: [wolftrainer, wolftrain]
